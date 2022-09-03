@@ -3,6 +3,8 @@ import random
 from manim_physics import*
 from colour import Color
 
+BC=BLUE
+AC=RED
 class Graphic(MovingCameraScene):
     def construct(self):
         self.camera.background_color=BC

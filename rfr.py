@@ -9,10 +9,10 @@ class Reflection(Scene):
         ax=Axes(x_range=[-30,30],x_length=50)
         lines1=self.lines1=VGroup(*[Line(start=ax.c2p(0,4.2),
                                        end=ax.c2p(0,-4.5),
-                                       color=AC),
+                                       color=BLUE),
                                  Line(start=ax.c2p(-10,0),
                                       end=ax.c2p(10,0),
-                                      color= AC)
+                                      color= BLUE)
 
         ]
         )
@@ -44,7 +44,7 @@ class Reflection(Scene):
         self.play(dot1.animate.move_to(ax.c2p(2,-5)),run_time=2,rate_function=linear)
 
     def construct(self):
-        self.camera.background_color=BC
+        
         rotation_centre=LEFT
         self.creating()
         self.dotmoving()
